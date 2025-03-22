@@ -16,12 +16,33 @@
 <body>
     
 
-    <form action="formulario">
-   <p>Nome <input type="text" name="nomedele" id="textum"></p>
-   <input type="submit" value="cadastrar">
     
+        <form action="cadastro.php" autocomplete="on">
+           <fieldset>
+              <legend>Dados Pessoais</legend>
+               <p>
+                <label for="iname">Nome </label>
+                <input type="text" name="nomedele" id="iname" required minlength="3" maxlength="40" autocomplete="username">
+                </p>
+                       
+                <p> 
+                <label for="isobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="isobrenome" required autocomplete="nickname">
+                </p>
+                       
+                <p> 
+                <label for="isenha">senha</label>
+                <input type="password" name="senha" id="isenha" required minlength="9" maxlength="20" placeholder="minimo de 9 digitos" autocomplete="current-password">   
+                </p>
+                       
+                <p>
+                <input type="submit" value="cadastrar">
+                <input type="reset" value="limpar">
+                </p>
 
-    </form>
+           </fieldset>
+        </form>
+    
 
 
 </body>
