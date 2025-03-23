@@ -17,7 +17,7 @@
     
 
     
-        <form action="cadastro.php" autocomplete="on">
+        <form action="cadastro.php" autocomplete="on" method="post">
            <fieldset>
               <legend>Dados Pessoais</legend>
                <p>
@@ -41,6 +41,54 @@
                 </p>
 
            </fieldset>
+
+           <fieldset>
+           <legend>Esportes</legend>
+            <p> 
+             <input type="checkbox" name="foot" id="ifoot"> 
+             <label for="ifoot">fotebol</label>
+           </p>
+
+           <p>
+           
+            <input type="checkbox" name="tenis" id="itenis">
+            <label for="itenis">tenis</label> 
+          </p>
+
+          <p>
+            <label for="ivolei"></label>
+            <input type="checkbox" name="volei" id="ivolei"> 
+            <label for="ivolei">volei</label>
+          </p>
+
+          <p>
+            <label for="ibast"></label>
+            <input type="checkbox" name="bast" id="ibast"> 
+            <label for="ibast">basquete</label>
+          </p>
+
+           </fieldset>
+
+           <fieldset>
+            <legend>sexo</legend>
+           <p>
+              <input type="radio" name="sexo" id="imasc">
+              <label for="imasc"> masculino</label>
+           </p>
+            
+           <p>
+            <input type="radio" name="sexo" id="ifeme">
+            <label for="ifeme"> feminino</label>
+         </p>
+            
+         <p>
+            <label for="isatis"> satisfacao</label>
+           <input type="range" name="satisfacao" id="isatis" value="1">
+               
+         </p>
+
+           </fieldset>
+
         </form>
     
 
