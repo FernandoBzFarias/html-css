@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+
+    <style>
+   *{
+    font-family: Arial, Helvetica, sans-serif;
+   }
+    </style>
+
+
+</head>
+<body>
+    
+
+    
+        <form action="cadastro.php" autocomplete="on" method="post">
+           <fieldset>
+              <legend>Dados Pessoais</legend>
+               <p>
+                <label for="iname">Nome </label>
+                <input type="text" name="nomedele" id="iname" required minlength="3" maxlength="40" autocomplete="username">
+                </p>
+                       
+                <p> 
+                <label for="isobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="isobrenome" required autocomplete="nickname">
+                </p>
+                       
+                <p> 
+                <label for="isenha">senha</label>
+                <input type="password" name="senha" id="isenha" required minlength="9" maxlength="20" placeholder="minimo de 9 digitos" autocomplete="current-password">   
+                </p>
+                       
+                <p>
+                <input type="submit" value="cadastrar">
+                <input type="reset" value="limpar">
+                </p>
+
+           </fieldset>
+
+           <fieldset>
+           <legend>Esportes</legend>
+            <p> 
+             <input type="checkbox" name="foot" id="ifoot"> 
+             <label for="ifoot">fotebol</label>
+           </p>
+
+           <p>
+           
+            <input type="checkbox" name="tenis" id="itenis">
+            <label for="itenis">tenis</label> 
+          </p>
+
+          <p>
+            <label for="ivolei"></label>
+            <input type="checkbox" name="volei" id="ivolei"> 
+            <label for="ivolei">volei</label>
+          </p>
+
+          <p>
+            <label for="ibast"></label>
+            <input type="checkbox" name="bast" id="ibast"> 
+            <label for="ibast">basquete</label>
+          </p>
+
+           </fieldset>
+
+           <fieldset>
+            <legend>sexo</legend>
+           <p>
+              <input type="radio" name="sexo" id="imasc">
+              <label for="imasc"> masculino</label>
+           </p>
+            
+           <p>
+            <input type="radio" name="sexo" id="ifeme">
+            <label for="ifeme"> feminino</label>
+         </p>
+            
+         <p>
+            <label for="isatis"> satisfacao</label>
+           <input type="range" name="satisfacao" id="isatis" value="1">
+               
+         </p>
+
+         <p>
+            <label for="iestad"> estado</label>
+       
+           <select name="estado" id="iestad">
+               <option value="AC"> acre</option> 
+               <option value="AL">Alagoas</option>
+               <option value="CE">Ceará </option>
+               <option value="PA">Pará</option>
+           </select>
+         </p>
+
+           <p>
+            <label for="iprof">profissao</label>
+          <input type="text" name="profissao" id="iprof" list="listaprof"> 
+          <datalist id="listaprof">
+          <option value="ADM">Administrador</option>
+          <option value="PROF">Professor</option>
+          <option value="EDF">Educador Fisico</option>
+
+          </datalist>
+
+           </p>
+
+          <p>
+            <label for="itex">digita sujestao de melhoria</label>
+            <textarea name="texo" id="itex"></textarea>
+          </p>
+
+           </fieldset>
+
+        </form>
+    
+
+
+</body>
+</html>
