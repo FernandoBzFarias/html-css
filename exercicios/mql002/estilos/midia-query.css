@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+@media print{
+ body{
+    background-image: url(../picture/back-print.jpg);
+ }
+ img#tve{
+    display: none;
+}
+
+img#table{
+    display: none;
+}
+
+img#impre{
+    display: block;
+}
+
+img#celu{
+    display:none;
+}
+
+img#compu{
+    display: none;
+}
+}
+
+@media screen and (min-width:601px) and (max-width:768px){
+ body{
+    background-image: url(../picture/back-tablet.jpg);
+ }
+
+ img#tve{
+    display: none;
+}
+
+img#table{
+    display: block;
+}
+
+img#impre{
+    display: none;
+}
+
+img#celu{
+    display:none;
+}
+
+img#compu{
+    display: none;
+}
+
+
+}
+
+@media screen and (min-width:769px) and (max-width:1000px){
+    body{
+        background-image: url(../picture/back-pc.jpg);
+    }
+
+    img#tve{
+        display: none;
+    }
+    
+    img#table{
+        display: none;
+    }
+    
+    img#impre{
+        display: none;
+    }
+    
+    img#celu{
+        display:none;
+    }
+    
+    img#compu{
+        display: block;
+    }
+    
+}
+
+@media screen and (min-width:1001px){
+body{
+    background-image: url(../picture/back-tv.jpg);
+}
+img#tve{
+    display: block;
+}
+
+img#table{
+    display: none;
+}
+
+img#impre{
+    display: none;
+}
+
+img#celu{
+    display:none;
+}
+
+img#compu{
+    display: none;
+}
+}
+
